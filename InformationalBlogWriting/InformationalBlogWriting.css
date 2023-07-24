@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+#inputText{
+    width: 98%;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    resize: none;
+}
+#inputTextarea1 {
+    width: 98%;
+    height: 150px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.keyword-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.keyword-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.keyword-form button:hover {
+    background-color: #0056b3;
+}
+
+.output-textarea {
+    width: 98%;
+    height: 200px;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    outline: none;
+}
+
+.copy-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.copy-button:hover {
+    background-color: #218838;
+}
+
+.message {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .keyword-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #inputText,
+    #inputTextarea1,
+    #inputTextarea2,
+    .output-textarea {
+        width: 98%;
+    }
+
+    .output-textarea {
+        height: 120px;
+    }
+}

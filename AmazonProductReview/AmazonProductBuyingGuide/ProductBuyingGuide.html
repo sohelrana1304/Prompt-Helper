@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Combiner</title>
+    <link rel="stylesheet" href="ProductBuyingGuide.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Product Buying Guide Prompt</h1>
+        <label for="inputText">Enter Keyword:</label>
+        <input type="text" id="inputText" >
+
+        <div class="keyword-form">
+            <label for="inputTextarea1">Enter Part from Outline:</label>
+            <textarea id="inputTextarea1" ></textarea>
+
+            <!-- <label for="inputTextarea2">Enter Product Description:</label>
+            <textarea id="inputTextarea2" ></textarea> -->
+
+            <button id="combineButton">Get Prompt</button>
+        </div>
+
+        <label for="outputTextarea">Chat GPT Prompt:</label>
+        <textarea id="outputTextarea" class="output-textarea" ></textarea>
+
+        <button id="copyButton" class="copy-button">Copy Prompt</button>
+        <div class="message"></div>
+    </div>
+
+    <script src="ProductBuyingGuide.js"></script>
+</body>
+</html>

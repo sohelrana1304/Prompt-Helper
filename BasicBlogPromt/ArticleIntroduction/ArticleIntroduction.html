@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Combiner</title>
+    <link rel="stylesheet" href="ArticleIntroduction.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Article Introduction</h1>
+        <div class="double-input">
+            <label for="inputText">Enter Keyword:</label>
+            <input type="text" id="inputText">
+
+            <label for="inputTextarea1">Enter Word Count</label>
+            <input type="text" id="inputTextarea1">
+            
+            <button id="getPrompt" class="getPrompt">Get Prompt</button>
+            <textarea id="outputPrompt" class="outputPrompt"></textarea>
+            <button id="copyPrompt" class="copyPrompt">Copy Prompt</button>
+            <div class="copiedMessage"></div>
+        </div>
+    </div>
+
+    <script src="ArticleIntroduction.js"></script>
+</body>
+
+</html>
