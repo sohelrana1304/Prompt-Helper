@@ -14,7 +14,18 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.back-to-home{
+    color: black;
+    text-decoration: none;
+}
+
 h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
