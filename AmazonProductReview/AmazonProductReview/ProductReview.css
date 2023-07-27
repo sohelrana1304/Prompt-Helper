@@ -113,7 +113,8 @@ label {
     background-color: #218838;
 }
 
-.message {
+.message,
+.promptReadyMessage {
     color: #28a745;
     font-size: 14px;
     margin-top: 5px;

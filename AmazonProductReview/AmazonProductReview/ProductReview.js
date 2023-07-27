@@ -5,9 +5,11 @@ const combineButton = document.getElementById("combineButton");
 const outputTextarea = document.getElementById("outputTextarea");
 const copyButton = document.getElementById("copyButton");
 const message = document.querySelector(".message");
+const promptReadyMessage = document.querySelector(".promptReadyMessage");
 
 combineButton.addEventListener("click", function () {
   combineInputs();
+  promptCombined();
 });
 
 copyButton.addEventListener("click", function () {
@@ -83,5 +85,14 @@ function copyTextToClipboard() {
   message.innerText = "Prompt copied to clipboard!";
   setTimeout(() => {
     message.innerText = "";
+  }, 2000);
+}
+
+function promptCombined() {
+  document.execCommand("copy");
+
+  promptReadyMessage.innerText = "Prompt is Ready to Copy";
+  setTimeout(() => {
+    promptReadyMessage.innerText = "";
   }, 2000);
 }
