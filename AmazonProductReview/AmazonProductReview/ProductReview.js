@@ -65,7 +65,7 @@ From the above Product Name and Description, you have to write an in-depth produ
 
 Now write about these points using the Product Name and Description:
 
-Use a good and catchy Product Name (Make it catchy and shorter, Use H4 heading)
+Use a good and catchy Product Name (Make it catchy and shorter, Use H3 heading)
 - In-depth Product Review (Write between 200 - 250 words, do not make any bullet points. Use H4 heading)
 - What We Liked (Use bullet points, minimum 5 points, and make it a one-liner. Use H4 heading)
 - What We Disliked (Use bullet points, minimum 3 points and make it a one-liner. Use H4 heading)
