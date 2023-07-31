@@ -69,6 +69,7 @@ Use a good and catchy Product Name (Make it catchy and shorter, Use H3 heading)
 - In-depth Product Review (Write between 200 - 250 words, do not make any bullet points. Use H4 heading)
 - What We Liked (Use bullet points, minimum 5 points, and make it a one-liner. Use H4 heading)
 - What We Disliked (Use bullet points, minimum 3 points and make it a one-liner. Use H4 heading)
+- Key Specifications (Use bullet points, Mention age recommendation, Used material, and Mention any important specification that is related to the product, Do not mention ASIN number, Model number or any Product inventory related points. Use H4 heading)
 - Our Verdict (use H4 heading)
 
 You should use markdown formatting, including bold, UL/OL, H3, H4, and necessary headings, and write with a degree of creativity, burstiness, and human-like. Use proper headings, subheadings, bullet points, etc. Start with H3 Heading.
