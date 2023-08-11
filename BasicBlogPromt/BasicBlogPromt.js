@@ -6,9 +6,11 @@ for (let i = 0; i < inputPairs.length; i++) {
   const outputTextarea = inputPairs[i].querySelector(".output-textarea");
   const copyButton = inputPairs[i].querySelector(".copy-button");
   const message = inputPairs[i].querySelector(".message");
+  const promptReadyMessage = inputPairs[i].querySelector(".promptReadyMessage");
 
   combineButton.addEventListener("click", function () {
     combineInputs(i);
+    promptCombined(i);
   });
 
   copyButton.addEventListener("click", function () {
@@ -27,23 +29,21 @@ function combineInputs(index) {
 
   switch (index) {
     case 0:
-      combinedOutput = `Act as an SEO Copywriter. You’ll have to provide 5-6 catchy, click-worthy headlines that include the "${inputText}" and meta descriptions which also include the "${inputText}". The meta description should be within 140 characters. Must include the exact "${inputText}" in both title and meta description. Write 10-15 tags for the "${inputText}" and separate them by comma.`;
+      combinedOutput = `Act as an SEO Copywriter. You’ll have to provide 5-6 catchy, click-worthy headlines that include the "${inputText}" and meta descriptions which also include the "${inputText}". The meta description should be within 140 characters. Must include the exact "${inputText}" in both title and meta description. Write 10-15 tags for the "${inputText}" and separate them by a comma.`;
       break;
     case 1:
-      combinedOutput = `Please ignore all previous instructions. Please respond only in the English language. You are a market research expert who is an expert at generating questions and answers for topics. You have a Conversational tone of voice. You have a Conversational writing style. Please generate 10 most frequently asked questions with answers on the topic "${inputText}". Make each question bold. Follow numeric numbering, and do not use list items. Must use FAQ Title based on the topic. Do not self-reference. Do not explain what you are doing. Do not include FAQ words in Numbering.`;
+      combinedOutput = `Please ignore all previous instructions. Please respond only in the English language. You are a market research expert who is an expert at generating questions and answers for topics. You have a Conversational tone of voice. You have a Conversational writing style. Please generate the 10 most frequently asked questions with answers on the topic "${inputText}". Make each question bold. Follow numeric numbering, and do not use list items. Must use FAQ Title based on the topic. Do not self-reference. Do not explain what you are doing. Do not include FAQ words in Numbering.`;
       break;
     case 2:
       combinedOutput = `Please ignore all previous instructions, and start fresh. Act as an experienced copywriter, you are experienced in writing Analogy. Write an analogy about the "${inputText}" topic.
 
 You have to maintain the following tone, voice, vocabulary, and sentence structure to use when crafting analogies:
 
-Tone: The tone should be engaging, friendly, and approachable. Analogies are meant to make complex concepts easier to grasp, so avoid using a condescending or overly formal tone. Instead, strive for a tone that feels like a conversation with a knowledgeable friend.
+Tone and Voice: The tone of the text should be informative and reassuring. The writer should adopt an authoritative voice while addressing the audience and providing them with valuable information.
 
-Voice: Use a conversational voice that speaks directly to the reader. This helps create a connection and makes the analogy feel more personal. Avoid using a passive voice and instead, opt for an active voice that energizes the analogy.
+Vocabulary: The vocabulary should be very clear and accessible to the target audience. Technical terms should be minimal. The vocabulary should convey the information in a straightforward manner.
 
-Vocabulary: Choose clear and straightforward language that the target audience can easily understand. Avoid jargon and technical terms, unless you can analogize them effectively to make the meaning clearer. Keep the vocabulary accessible and relatable to the readers.
-
-Sentence Structure: Keep your sentences concise and focused. Long and convoluted sentences can dilute the impact of the analogy. Use a mix of short and medium-length sentences to maintain a smooth flow and rhythm. Break down complex ideas into smaller parts and use analogies to tie them together.
+Sentence Structure: The sentences should be concise and well-structured. You should provide information in a straightforward manner, making it extremely easy for readers to understand the information. You should use bullet points and subheadings to aid in organizing the information and enhancing readability.
 
 Structuring the Analog:
 
@@ -77,6 +77,15 @@ function copyTextToClipboard(index) {
   }, 2000);
 }
 
+function promptCombined(index) {
+  // document.execCommand("copy");
+
+  const promptReadyMessage = document.querySelectorAll(".promptReadyMessage")[index];
+  promptReadyMessage.innerText = "Prompt is Ready to Copy";
+  setTimeout(() => {
+    promptReadyMessage.innerText = "";
+  }, 2000);
+}
 
 
 

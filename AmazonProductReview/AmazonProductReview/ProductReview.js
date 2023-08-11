@@ -27,15 +27,11 @@ You have to maintain the following tone, voice, vocabulary, and sentence structu
 
 The tone, voice, vocabulary, and sentence structure in an Amazon product review article should be tailored to appeal to the target audience, which is typically consumers seeking information about the product. Here are some guidelines for crafting the right tone and style:
 
-Tone: The tone should be friendly, approachable, and conversational. Avoid being overly formal or too sales-oriented. Create a tone that feels like a helpful friend providing honest advice.
+Tone and Voice: The tone of the text should be informative and reassuring. The writer should adopt an authoritative voice while addressing the audience and providing them with valuable information.
 
-Voice: Use a first-person or second-person voice to establish a personal connection with the readers. Address them directly with pronouns like “you” to engage them more effectively.
+Vocabulary: The vocabulary should be very clear and accessible to the target audience. Technical terms should be minimal. The vocabulary should convey the information in a straightforward manner.
 
-Vocabulary: Employ clear and straightforward language that is easy for the average reader to understand. Avoid jargon or technical terms unless necessary, and explain them if you do use them.
-
-Sentence Structure: Keep sentences concise and to the point. Use a mix of short and longer sentences to maintain a natural flow. Vary sentence lengths to avoid monotony.
-
-Avoid Excessive Superlatives: While it’s okay to highlight the product’s positive attributes, avoid excessive use of exaggerated superlatives. Readers value genuine and balanced reviews.
+Sentence Structure: The sentences should be concise and well-structured. You should provide information in a straightforward manner, making it extremely easy for readers to understand the information. You should use bullet points and subheadings to aid in organizing the information and enhancing readability.
 
 Be Objective: Present both the pros and cons of the product objectively. Readers appreciate honesty, and it helps build trust in your reviews.
 
@@ -44,10 +40,6 @@ Use Descriptive Language: Paint a vivid picture of the product by using descript
 Focus on Benefits: Emphasize the benefits the product offers to users. Explain how it can solve their problems or improve their lives.
 
 Engage with Questions: Use rhetorical questions to engage readers and prompt them to think about how the product might address their needs.
-
-Create Subheadings: Organize your review with clear and relevant subheadings. This makes the article more scannable and helps readers find the information they seek quickly.
-
-Stay Professional: While maintaining a friendly tone, remember to remain professional in your writing. Avoid slang or inappropriate language.
 
 Include Visuals: If possible, include images or graphics of the product to enhance the visual appeal and provide more context.
 
@@ -72,9 +64,7 @@ Use a good and catchy Product Name (Make it catchy and shorter, Use H3 heading)
 - Key Specifications (Use bullet points, Mention age recommendation, Used material, and Mention any important specification that is related to the product, Do not mention ASIN number, Model number or any Product inventory related points. Use H4 heading)
 - Our Verdict (use H4 heading)
 
-You should use markdown formatting, including bold, UL/OL, H3, H4, and necessary headings, and write with a degree of creativity, burstiness, and human-like. Use proper headings, subheadings, bullet points, etc. Start with H3 Heading.
-
-By considering each instruction writing language should be simple and very easy to understand.`;
+You should use markdown formatting, including bold, UL/OL, H3, H4, and necessary headings, and write with a degree of creativity, burstiness, and human-like. Use proper headings, subheadings, bullet points, etc. Start with H3 Heading.`;
 
   outputTextarea.value = combinedOutput;
 }

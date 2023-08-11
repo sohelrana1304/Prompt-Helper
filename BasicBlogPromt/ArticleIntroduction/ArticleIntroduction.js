@@ -28,13 +28,11 @@ function makePrompt() {
 
 You have to maintain the following tone, voice, vocabulary, and sentence structure while writing:
 
-1. Tone: The tone of the introduction should align with the overall theme and subject of the article. It can be authoritative, conversational, enthusiastic, or informative, depending on the target audience and the nature of the content. It's essential to strike the right balance to resonate with readers.
+Tone and Voice: The tone of the text should be informative and reassuring. The writer should adopt an authoritative voice while addressing the audience and providing them with valuable information.
 
-2. Voice: The voice of the introduction should be consistent with the brand or publication's style and the content's purpose. First-person, second-person, or third-person voice can be used, depending on the context. Second-person voice (using "you") can create a more personal connection with the readers.
+Vocabulary: The vocabulary should be very clear and accessible to the target audience. Technical terms should be minimal. The vocabulary should convey the information in a straightforward manner.
 
-3. Vocabulary: Use clear and concise language to convey the main idea effectively. Avoid jargon or complex terminology that might confuse readers. If technical terms are necessary, explain them briefly. Incorporate powerful words and emotional triggers to evoke curiosity and interest in the readers.
-
-4. Sentence Structure: Keep the sentences in the introduction relatively short and straightforward. This helps maintain readability and allows readers to grasp the main point quickly. A mix of sentence lengths can create a natural flow but avoid overly long or convoluted sentences that might lose the reader's attention.
+Sentence Structure: The sentences should be concise and well-structured. You should provide information in a straightforward manner, making it extremely easy for readers to understand the information. You should use bullet points and subheadings to aid in organizing the information and enhancing readability.
 
 I want you to write a compelling blog introduction paragraph around ${wordCount} words on "${keyword}" in the English language. Please use the AIDA (Attention Interest Desire Action) copywriting framework to hook and grab the attention of the blog readers. Please intersperse short and long sentences. Utilize uncommon terminology to enhance the originality of the content. Please format the content in a professional format. Do not self-reference. Do not explain what you are doing. It would be great if you can add the main keyword "${keyword}" and its related keyword into the text wherever appropriate, do not mention them separately. Please do highlight these keywords in bold in the text using markdown if you have them in the text. Remember that the topic is "${keyword}".`;
 

@@ -5,9 +5,11 @@ const combineButton = document.getElementById("combineButton");
 const outputTextarea = document.getElementById("outputTextarea");
 const copyButton = document.getElementById("copyButton");
 const message = document.querySelector(".message");
+const promptReadyMessage = document.querySelector(".promptReadyMessage");
 
 combineButton.addEventListener("click", function () {
   combineInputs();
+  promptCombined();
 });
 
 copyButton.addEventListener("click", function () {
@@ -23,13 +25,11 @@ function combineInputs() {
 
 You have to maintain the following tone, voice, vocabulary, and sentence structure while writing.
 
-Tone: The tone should be professional, authoritative, and objective.
+Tone and Voice: The tone of the text should be informative and reassuring. The writer should adopt an authoritative voice while addressing the audience and providing them with valuable information.
 
-Voice: The voice should be third-person or second-person, depending on the style guide or preference.
+Vocabulary: The vocabulary should be very clear and accessible to the target audience. Technical terms should be minimal. The vocabulary should convey the information in a straightforward manner.
 
-Vocabulary: The vocabulary should be clear, concise, and appropriate for the target audience, avoiding jargon or overly complex terms unless necessary and explained properly.
-
-Sentence Structure: The sentence structure should be varied, with a mix of short and long sentences to maintain a smooth flow and keep the readers engaged.
+Sentence Structure: The sentences should be concise and well-structured. You should provide information in a straightforward manner, making it extremely easy for readers to understand the information. You should use bullet points and subheadings to aid in organizing the information and enhancing readability.
 
 Additionally, use transition words to connect ideas and maintain coherence throughout the article. Always focus on clarity and readability, making it easy for the audience to understand the information presented. Don't follow AI pattern while writing. Make sure to add a bit of humor and add some funny lines.
 
@@ -41,9 +41,7 @@ ${partFromOutline}
 
 " part from the outline.
 
-You should use markdown formatting, including bold, UL/OL, H2, H3, H4 and necessary headings and write with a degree of creativity, burstiness, and human-like. Use proper headings, subheadings, bullet points, etc. Start with H2 Heading. Don't use nested list items. Make bold each heading. Use active voice and short sentences to make the content more readable. I want you to try to include the main keyword "${keyword}" and it's related keyword while writing, do not mention them seperately. Don't Talk about Yourself or Your Experience Address to the Reader.
-
-By considering each instruction writing language should be simple and very easy to understand.`;
+You should use markdown formatting, including bold, UL/OL, H2, H3, H4 and necessary headings and write with a degree of creativity, burstiness, and human-like. Use proper headings, subheadings, bullet points, etc. Start with H2 Heading. Don't use nested list items. Make bold each heading. Use active voice and short sentences to make the content more readable. I want you to try to include the main keyword "${keyword}" and it's related keyword while writing, do not mention them seperately. Don't Talk about Yourself or Your Experience Address to the Reader.`;
 
   outputTextarea.value = combinedOutput;
 }
@@ -55,5 +53,14 @@ function copyTextToClipboard() {
   message.innerText = "Prompt copied to clipboard!";
   setTimeout(() => {
     message.innerText = "";
+  }, 2000);
+}
+
+function promptCombined() {
+  // document.execCommand("copy");
+
+  promptReadyMessage.innerText = "Prompt is Ready to Copy";
+  setTimeout(() => {
+    promptReadyMessage.innerText = "";
   }, 2000);
 }
