@@ -29,7 +29,7 @@ function combineInputs(index) {
 
   switch (index) {
     case 0:
-      combinedOutput = `Act as an SEO Copywriter. You’ll have to provide 5-6 catchy, click-worthy headlines that include the "${inputText}" and meta descriptions which also include the "${inputText}". The meta description should be within 140 characters. Must include the exact "${inputText}" in both title and meta description. Write 10-15 tags for the "${inputText}" and separate them by a comma.`;
+      combinedOutput = `Act as an SEO Copywriter. You’ll have to provide 5-6 catchy, click-worthy headlines that include the "${inputText}" and meta descriptions that also include the "${inputText}". Each title should be under 80 characters and each meta description should be within 140 characters. Must include the exact "${inputText}" in both title and meta description. Write 10-15 tags for the "${inputText}" and separate them by a comma.`;
       break;
     case 1:
       combinedOutput = `Please ignore all previous instructions. Please respond only in the English language. You are a market research expert who is an expert at generating questions and answers for topics. You have a Conversational tone of voice. You have a Conversational writing style. Please generate the 10 most frequently asked questions with answers on the topic "${inputText}". Make each question bold. Follow numeric numbering, and do not use list items. Must use FAQ Title based on the topic. Do not self-reference. Do not explain what you are doing. Do not include FAQ words in Numbering.`;
