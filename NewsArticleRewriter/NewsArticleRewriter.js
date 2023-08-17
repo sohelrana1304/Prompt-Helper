@@ -70,8 +70,7 @@ By maintaining the above tone, voice, vocabulary, and sentence structure rewrite
 
 5. Focus on Clarity: While rephrasing, prioritize clarity. Make sure your rewritten version is easily understandable by the target audience.
 
-Now rewrite this News Article: 
-" ${existingNews} "`;
+Now rewrite this News Article: " ${existingNews} "`;
 
   outputTextarea.value = combinedOutput;
 }
