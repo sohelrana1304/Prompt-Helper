@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Buying Guide Prompt</title>
+    <link rel="icon" type="image/x-icon" href="../../Asset/chatgpt-icon.png">
+    <link rel="stylesheet" href="NewsArticleRewriter.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html" class="back-to-home">
+            <h1>Chat GPT Prompts Helper</h1>
+        </a>
+    </div>
+    <div class="container">
+        <h2>News Article Rewriting Prompt</h2>
+        <!-- <label for="inputText">Enter Keyword:</label>
+        <input type="text" id="inputText" > -->
+
+        <div class="keyword-form">
+            <label for="inputTextarea1">Enter News:</label>
+            <textarea id="inputTextarea1" ></textarea>
+
+            <!-- <label for="inputTextarea2">Enter Product Description:</label>
+            <textarea id="inputTextarea2" ></textarea> -->
+
+            <button id="combineButton">Get Prompt</button>
+            <div class="promptReadyMessage"></div>
+        </div>
+
+        <label for="outputTextarea">Chat GPT Prompt:</label>
+        <textarea id="outputTextarea" class="output-textarea" ></textarea>
+
+        <button id="copyButton" class="copy-button">Copy Prompt</button>
+        <div class="message"></div>
+
+    </div>
+    <div class="container">
+        <h2>News Article's Title, Meta, Permalink, Tag & Focus Keyword</h2>
+
+        <label for="outputTextarea1">Chat GPT Prompt:</label>
+        <textarea id="outputTextarea1" class="output-textarea1">Act as an experienced news article writer. Your specialization is writing news article Titles, Meta Descriptions, Permalinks, and Tags. You’ll have to provide 5-6 clickbait headlines, meta descriptions, and 5-6 SEO-friendly permalinks based on the above topic. Each meta description should be within 150 characters. Write 10-15 tags and separate them by a comma. Write 2-3 focus keywords based on the above news article. Focus keywords must comply with the title and meta description.</textarea>
+
+        <button id="copyButton1" class="copy-button">Copy Prompt</button>
+        <div class="message1"></div>
+    </div>
+
+    <script src="NewsArticleRewriter.js"></script>
+</body>
+</html>

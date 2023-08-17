@@ -40,7 +40,7 @@ ${partfromOutline}
 
 " part from the outline.
 
-You should use markdown formatting, including bold, UL/OL, H2, H3, H4 and necessary headings and write with a degree of creativity, burstiness, and human-like. Use proper headings, subheadings, bullet points, etc. Start with H2 Heading. Don't use nested list items. Make bold each heading. Use active voice and short sentences to make the content more readable. I want you to try to include the main keyword "${keyword}" and it's related keyword while writing, do not mention them seperately. Don't Talk about Yourself or Your Experience Address to the Reader.
+You should use markdown formatting, including bold, UL/OL, H2, H3, H4, and necessary headings, and write with a degree of creativity, burstiness, and human-like. Use proper headings, subheadings, bullet points, etc. Start with H2 Heading. Don't use nested list items. Make bold each heading. Use active voice and short sentences to make the content more readable. I want you to try to include the main keyword "${keyword}" and its related keyword while writing, do not mention them separately. Don't Talk about Yourself or Your Experience Address to the Reader.
 
 By considering each instruction writing language should be simple and very easy to understand.`;
 
