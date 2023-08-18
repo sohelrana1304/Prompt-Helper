@@ -61,7 +61,7 @@ By maintaining the above tone, voice, vocabulary, and sentence structure rewrite
 
 Now rewrite this News Article: " ${existingNews} "
 
-You should use markdown formatting, including bold, UL/OL, H2, H3, H4, and necessary headings. Use proper headings, subheadings, bullet points, etc.`;
+You should use markdown formatting, including bold, UL/OL, H1, H2, H3, H4, and necessary headings. Use proper headings, subheadings, bullet points, etc.`;
 
   outputTextarea.value = combinedOutput;
 }
