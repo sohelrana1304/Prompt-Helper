@@ -59,7 +59,9 @@ The opening of Sunshine Meadows is expected to bring a fresh and vibrant additio
 
 By maintaining the above tone, voice, vocabulary, and sentence structure rewrite the following News Article:
 
-Now rewrite this News Article: " ${existingNews} "`;
+Now rewrite this News Article: " ${existingNews} "
+
+You should use markdown formatting, including bold, UL/OL, H2, H3, H4, and necessary headings. Use proper headings, subheadings, bullet points, etc.`;
 
   outputTextarea.value = combinedOutput;
 }
