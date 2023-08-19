@@ -61,7 +61,7 @@ By maintaining the above tone, voice, vocabulary, and sentence structure rewrite
 
 Now rewrite this News Article: " ${existingNews} "
 
-You should use markdown formatting, including bold, UL/OL, H1, H2, H3, H4, and necessary headings. Use proper headings, subheadings, bullet points, etc. Always start with H1 heading.
+You should use markdown formatting, including bold, UL/OL, H1, H2, H3, H4, and necessary headings. Use proper headings, subheadings, bullet points, etc. Always start with a clickbait H1 heading.
 
 After writing write a meta description under 155 characters and write 8-10 tags and separate them by a comma.`;
 
