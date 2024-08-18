@@ -85,14 +85,46 @@ document.getElementById("get-prompt").addEventListener("click", function () {
 
   // document.getElementById("output").value = promptText;
   document.getElementById("output").value = completePrompt;
-  document.getElementById("get-prompt-message").textContent =
-    "Prompt is ready to Copy";
+  
+  // document.getElementById("get-prompt-message").textContent =
+  //   "Prompt is ready to Copy";
+    
 });
+
+document
+  .getElementById("get-prompt")
+  .addEventListener("click", function () {
+    // Assuming the prompt generation logic is here
+
+    // Show the message
+    const promptMessage = document.getElementById("get-prompt-message");
+    promptMessage.textContent = "Prompt is ready to Copy";
+
+    // Set a timer to clear the message after 5 seconds (5000 milliseconds)
+    setTimeout(function () {
+      promptMessage.textContent = "";
+    }, 3000);
+  });
+
+
+// document.getElementById("copy-text").addEventListener("click", function () {
+//   const outputText = document.getElementById("output");
+//   outputText.select();
+//   document.execCommand("copy");
+//   document.getElementById("copy-message").textContent =
+//     "Prompt has been successfully copied";
+// });
 
 document.getElementById("copy-text").addEventListener("click", function () {
   const outputText = document.getElementById("output");
   outputText.select();
   document.execCommand("copy");
-  document.getElementById("copy-message").textContent =
-    "Prompt has been successfully copied";
+
+  const copyMessage = document.getElementById("copy-message");
+  copyMessage.textContent = "Prompt has been successfully copied";
+
+  // Set a timer to clear the message after 5 seconds (5000 milliseconds)
+  setTimeout(function () {
+    copyMessage.textContent = "";
+  }, 3000);
 });
