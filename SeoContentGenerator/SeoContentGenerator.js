@@ -14,7 +14,7 @@ document.getElementById("get-prompt").addEventListener("click", function () {
   const faqCount = document.getElementById("faq-count").value.trim() || "5";
   const aiImagePrompt =
     document.getElementById("ai-image-input").value.trim() ||
-    "Super hyper realistic image";
+    "Super hyper realistic";
   const description = document.getElementById("description").value.trim();
 
 
@@ -59,7 +59,7 @@ document.getElementById("get-prompt").addEventListener("click", function () {
     // promptText += `Tags (Count: ${tagsCount})\n`;
   }
   if (faqChecked) {
-    checkdValue += `FAQ`;
+    checkdValue += `FAQ, `;
     let getFaqsCount = `${faqCount}`;
     promptText += `Write the ${getFaqsCount} most frequently asked questions with answers on the topic ${focusKeyword}. Make each question bold. Do not do numbering, or do not use list items. Must use the FAQ Title that is "FAQs With Answers". Use markdown formatting. Make FAQ heading H2, for question use H3 heading and for answers use paragraph. Write only FAQ heading, questions, and answers. Do not add anything by yourself.`;
     // promptText += `FAQ (Count: ${faqCount})\n`;
@@ -67,11 +67,11 @@ document.getElementById("get-prompt").addEventListener("click", function () {
   if (aiImageChecked) {
     checkdValue += `Ai image generation prompt, `;
     let getAiImagePromptStyle = `${aiImagePrompt}`;
-    promptText += `Write an optimized and extremely detailed ai image generation prompt for AI model, do not need to make points or list items while writing, writing prompt in paragraph style only, image style should be ${getAiImagePromptStyle}`;
+    promptText += `Write an optimized and extremely detailed ai image generation prompt for AI model, do not need to make points or list items while writing, writing prompt in paragraph style only, image style should be ${getAiImagePromptStyle}. `;
     // promptText += `AI Image Generation Prompt: ${aiImagePrompt}\n`;
   }
   if (description) {
-    promptText += `Here is the information you can use this to generate better output, information: "${description}"`;
+    promptText += `Here is the information you can use this to generate better output, information: "\n${description}\n"`;
     // promptText += `Description: ${description}\n`;
   }
 
@@ -79,7 +79,7 @@ document.getElementById("get-prompt").addEventListener("click", function () {
   // console.log(checkdValue);
   // checkdValue;
 
-  let completePrompt = `Act as an SEO-optimized ${checkdValue} writing expert. ${promptText}`;
+  let completePrompt = `Act as an SEO-optimized ${checkdValue}writing expert. ${promptText}`;
 
   // let promptText = `Act as an SEO-optimized ${getTitle}, ${getMetaDescription}, ${getTags}, ${getFaqs}, ${getAiImagePromptWriter} writing expert, ${getTitlePrompt} ${getMetaDescriptionPrompt} ${getTagsPrompt} ${getFaqsPrompt} ${getAiImagePrompt} ${getDescription}`;
 
