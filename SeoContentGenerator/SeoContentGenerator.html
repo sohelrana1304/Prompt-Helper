@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Content Generator</title>
+    <link rel="icon" type="image/x-icon" href="../Asset/chatgpt-icon.png">
+    <link rel="stylesheet" href="SeoContentGenerator.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="../index.html" class="back-to-home">
+            <h1>Chat GPT Prompts Helper</h1>
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>SEO Content Generator</h1>
+        <form>
+            <div class="form-group">
+                <label for="focus-keyword">Focus Keyword</label>
+                <input type="text" id="focus-keyword" name="focus-keyword" placeholder="Enter your focus keyword..."
+                    required>
+            </div>
+
+            <div class="form-group checkboxes">
+                <div class="row">
+                    <label>
+                        <input type="checkbox" id="title" name="title"> Title
+                        <input type="number" id="title-count" name="title-count" placeholder="How many titles do you need?" value="1" min="0" max="99"
+                            class="count-input">
+                    </label>
+                    <label>
+                        <input type="checkbox" id="meta-description" name="meta-description"> Meta Description
+                        <input type="number" id="meta-description-count" name="meta-description-count" placeholder="How many meta descriptions do you need?" value="1" min="0"
+                            max="99" class="count-input">
+                    </label>
+                </div>
+                <div class="row">
+                    <label>
+                        <input type="checkbox" id="tags" name="tags"> Tags
+                        <input type="number" id="tags-count" name="tags-count" placeholder="How many tags do you need?" value="5" min="0" max="99"
+                            class="count-input">
+                    </label>
+                    <label>
+                        <input type="checkbox" id="faq" name="faq"> FAQ
+                        <input type="number" id="faq-count" name="faq-count" placeholder="How many faqs do you need?" value="5" min="0" max="99"
+                            class="count-input">
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label>
+                    <input type="checkbox" id="ai-image" name="ai-image"> AI Image Generation Prompt
+                    <input type="text" id="ai-image-input" name="ai-image-input"
+                        placeholder="Describe your desired image style, color, light, etc." value="Super hyper realistic image" class="full-width-input">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4"
+                    placeholder="Enter description here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="get-prompt" class="btn">Get Prompt</button>
+                <span id="get-prompt-message" class="message"></span>
+            </div>
+
+            <div class="form-group">
+                <textarea id="output" name="output" rows="6"
+                    placeholder="Generated content will appear here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="copy-text" class="btn">Copy Prompt</button>
+                <span id="copy-message" class="message"></span>
+            </div>
+        </form>
+    </div>
+    <script src="SeoContentGenerator.js"></script>
+</body>
+
+</html>
