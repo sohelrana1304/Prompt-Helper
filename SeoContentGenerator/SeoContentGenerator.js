@@ -55,19 +55,19 @@ document.getElementById("get-prompt").addEventListener("click", function () {
   if (tagsChecked) {
     checkdValue += `Tags, `;
     let getTagsCount = `${tagsCount}`;
-    promptText += `Write ${getTagsCount} SEO optimized tags and separate them by comma and also put a comma on the last tag,`;
+    promptText += `Write ${getTagsCount} SEO optimized tags and separate them by comma and also put a comma on the last tag. One of the tags must be the exact focus keyword "${focusKeyword}" (Important, don't change the focus keyword. Don't try to make the focus keyword grammatically correct or translate it.). `;
     // promptText += `Tags (Count: ${tagsCount})\n`;
   }
   if (faqChecked) {
     checkdValue += `FAQ, `;
     let getFaqsCount = `${faqCount}`;
-    promptText += `Write the ${getFaqsCount} most frequently asked questions with answers on the topic ${focusKeyword}. Make each question bold. Do not do numbering, or do not use list items. Must use the FAQ Title that is "FAQs With Answers". Use markdown formatting. Make FAQ heading H2, for question use H3 heading and for answers use paragraph. Write only FAQ heading, questions, and answers. Do not add anything by yourself.`;
+    promptText += `Write the ${getFaqsCount} most frequently asked questions with answers on the topic ${focusKeyword}. Make each question bold. Do not do numbering, or do not use list items. Must use the FAQ Title that is "Frequently Asked Questions With Answers". Use markdown formatting. Make FAQ heading H2, for question use H3 heading and for answers use paragraph. Write only FAQ heading, questions, and answers. Do not add anything by yourself. `;
     // promptText += `FAQ (Count: ${faqCount})\n`;
   }
   if (aiImageChecked) {
-    checkdValue += `Ai image generation prompt, `;
+    checkdValue += `AI image generation prompt, `;
     let getAiImagePromptStyle = `${aiImagePrompt}`;
-    promptText += `Write an optimized and extremely detailed ai image generation prompt for AI model, do not need to make points or list items while writing, writing prompt in paragraph style only, image style should be ${getAiImagePromptStyle}. `;
+    promptText += `Write an optimized and detailed AI image generation prompt for AI model, do not need to make points or list items while writing, write the prompt in paragraph style only, the image style should be ${getAiImagePromptStyle}. The main purpose of this AI image-generation prompt is to describe or showcase the "${focusKeyword}". `;
     // promptText += `AI Image Generation Prompt: ${aiImagePrompt}\n`;
   }
   if (description) {
