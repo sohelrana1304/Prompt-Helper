@@ -55,7 +55,7 @@ document.getElementById("get-prompt").addEventListener("click", function () {
   if (tagsChecked) {
     checkdValue += `Tags, `;
     let getTagsCount = `${tagsCount}`;
-    promptText += `Write ${getTagsCount} SEO optimized tags and separate them by comma and also put a comma on the last tag. One of the tags must be the exact focus keyword "${focusKeyword}" (Important, don't change the focus keyword. Don't try to make the focus keyword grammatically correct or translate it.). `;
+    promptText += `Write ${getTagsCount} SEO optimized tags and separate them by comma and also put a comma on the last tag. The first tags must be the exact focus keyword "${focusKeyword}" (Important, don't change the focus keyword. Don't try to make the focus keyword grammatically correct or translate it.). `;
     // promptText += `Tags (Count: ${tagsCount})\n`;
   }
   if (faqChecked) {
